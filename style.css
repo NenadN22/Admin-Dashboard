@@ -8,9 +8,10 @@ body {
 }
 .header {
     background-color: aqua;
+    padding: 20px;
 }
 .sidebar {
-    background-color: rgb(17, 226, 191);
+    background-color: #363740;
     grid-column: 1/2;
     grid-row:  1/3;
 }
@@ -28,6 +29,43 @@ body {
     width: 7%;
     fill: white;
 }
+.header-notification-section svg {
+    width: 5%;
+}
 .search-section svg {
-    width: 2%;
+    width: 3%;
+}
+.header-notification-section img {
+    width: 10%;
+    border-radius: 50px;
+}
+.second-image-section img {
+    width: 5%;
+    border-radius: 50px;
+}
+.header-first-section {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.search-section {
+    display: flex;
+    width: 80%;
+    align-items: center;
+    gap: 10px;
+
+}
+.search-section input {
+    width: 50%;
+    padding: 5px;
+    height: 10px;
+    border-radius: 50px;
+    border: none;
+}
+.header-notification-section {
+    width: 30%;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    justify-content: end;
 }
