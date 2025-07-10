@@ -178,10 +178,11 @@ input:focus {
     margin: 1% 0% 3% 0%;
 }
 .main-container-all {
-    margin: 2%;
+    margin: 3% 1%;
     display: grid;
-    grid-template-columns: 3fr 1fr;
+    grid-template-columns: 2fr 1fr;
     gap: 4%;
+    width: 99%;
 }
 .cards-div {
     display: grid;
