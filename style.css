@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Roboto';
 }
 body {
     width: 100vw;
@@ -9,6 +10,8 @@ body {
 }
 .header {
     background-color: #FFBF00;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    z-index: 1;
 }
 .sidebar {
     background-color: #363740;
@@ -64,6 +67,10 @@ body {
     background-color: #e2e8f0;
     border: none;
 }
+input:focus {
+    outline-color: #1992d4;
+    outline: 0.2rem solid black;
+}
 .header-notification-section {
     width: 30%;
     display: flex;
@@ -90,9 +97,12 @@ body {
     gap: 20%;
     
 }
+p {
+    font-weight: 600;
+}
 .second-buttons-section {
     display: flex;
-    gap: 50px;
+    gap: 2em;
     align-items: center;
 }
 .second-buttons-section button {
@@ -102,6 +112,58 @@ body {
     background-color: #1992d4;
     color: white;
     font-weight: 700;
+    font-size: 0.9rem;
+
+}
+.dashboard h2 {
+    color: white;
+}
+.dashboard {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.sidebar-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 70%;
+    padding: 0% 10%;
 
 }
 
+.dashboard svg {
+    width: 15%;
+}
+.sidebar-container ul li svg {
+    width: 7%;
+}
+.sidebar-container ul li {
+    font-size: 20px;
+    font-weight: 700;
+    display: flex;
+}
+
+.sidebar-container li {
+    list-style-type: none;
+    align-items: center;
+}
+.sidebar-container li a {
+    text-decoration: none;
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 5%;    
+}
+.sidebar ul {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+.sidebar-container li svg {
+    margin-right: 5px;
+}
+.second-image-section h3 {
+    font-size: 25px;
+    font-weight: 900;
+}
